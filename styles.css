@@ -1,0 +1,83 @@
+:root{
+  --bg: #f3f4f6;
+  --panel: #ffffff;
+  --accent: #3b82f6;
+  --btn: #e5e7eb;
+  --btn-func: #f97316;
+  --text: #111827;
+  font-family: "Segoe UI", Roboto, system-ui, -apple-system, "Helvetica Neue", Arial;
+}
+
+* { box-sizing: border-box; }
+
+html,body{
+  height:100%;
+  margin:0;
+  background: linear-gradient(180deg, #eef2ff 0%, var(--bg) 100%);
+  color:var(--text);
+}
+
+.calculator{
+  width: min(420px, 96vw);
+  margin: 7vh auto;
+  background: var(--panel);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(15,23,42,0.12);
+  padding: 18px;
+}
+
+.display{
+  height: 72px;
+  background: linear-gradient(180deg,#f8fafc,#fff);
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 2rem;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  overflow:hidden;
+  word-break: break-all;
+  margin-bottom: 16px;
+  border: 1px solid #e6edf3;
+}
+
+.buttons{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.btn{
+  height: 56px;
+  border-radius: 8px;
+  border: none;
+  background: var(--btn);
+  color: var(--text);
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.03);
+  transition: transform .06s ease, box-shadow .06s ease;
+}
+
+.btn:active{ transform: translateY(2px); box-shadow: none; }
+
+.operator{
+  background: linear-gradient(180deg,#fde68a,#f59e0b);
+  color: #111827;
+}
+
+.equals{
+  background: var(--accent);
+  color: #fff;
+  grid-row: span 1;
+}
+
+.function{
+  background: #f3f4f6;
+  color: #111827;
+}
+
+@media (max-width:380px){
+  .display{ font-size:1.6rem; height:64px; }
+  .btn{ height:52px; font-size:1rem; }
+}

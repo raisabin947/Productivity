@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="calculator" role="application" aria-label="Simple calculator">
+    <div class="display" id="display" aria-live="polite">0</div>
+
+    <div class="buttons">
+      <button class="btn function" data-action="clear">C</button>
+      <button class="btn function" data-action="backspace">⌫</button>
+      <button class="btn function" data-action="percent">%</button>
+      <button class="btn operator" data-value="÷">÷</button>
+
+      <button class="btn" data-value="7">7</button>
+      <button class="btn" data-value="8">8</button>
+      <button class="btn" data-value="9">9</button>
+      <button class="btn operator" data-value="×">×</button>
+
+      <button class="btn" data-value="4">4</button>
+      <button class="btn" data-value="5">5</button>
+      <button class="btn" data-value="6">6</button>
+      <button class="btn operator" data-value="-">−</button>
+
+      <button class="btn" data-value="1">1</button>
+      <button class="btn" data-value="2">2</button>
+      <button class="btn" data-value="3">3</button>
+      <button class="btn operator" data-value="+">+</button>
+
+      <button class="btn" data-value="0" style="grid-column: span 2;">0</button>
+      <button class="btn" data-value=".">.</button>
+      <button class="btn equals" data-action="equals">=</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
