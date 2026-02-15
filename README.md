@@ -1,4 +1,4 @@
-# Hi 👋 I'm Roshan Rai
+## Hi 👋 I'm Roshan Rai
 
 🎓 BSc.CSIT Final Semester Student  
 💻 Aspiring Frontend Developer (HTML & CSS)  
